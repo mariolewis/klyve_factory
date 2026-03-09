@@ -6,13 +6,13 @@ Klyve is a local-first SDLC orchestrator that puts you in charge of the Architec
 
 ---
 
-### ðŸ“¥ Download
-Klyve is a compiled desktop application.
-You can download the latest installer for Windows and AppImage for Linux from the **[Releases Page](https://github.com/klyvedev/klyve/releases)**.
+### Download
+Klyve can be executed in native Python or compiled (using Nuitka) into a desktop application.
+Build and package scripts for Windows (Installer) and Linux (AppImage) are included.
 
 ---
 
-### ðŸ“¸ The Visual Tour
+### The Visual Tour
 
 **1. From Idea to Spec**
 Don't start from scratch. Upload raw requirements, and Klyve generates your UX/UI, Application, and Technical specifications.
@@ -32,7 +32,7 @@ Keep stakeholders happy with auto-generated traceability matrices and sprint rep
 
 ---
 
-### âš ï¸ Release Notes & Troubleshooting
+### Release Notes & Troubleshooting
 
 **Known Issues (Beta)**
 * **Project Reports:** Four specific project reports have not yet been implemented in this release. The menu options for these in the *Reports Hub* will appear disabled.
