@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./screenshots/icon_128x128.png" width="200" alt="Klyve Logo">
+  <img src="./screenshots/icon_128x128.png" width="100" alt="Klyve Logo">
 </p>
 
 # Klyve
