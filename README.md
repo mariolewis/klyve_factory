@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="./screenshots/icon_256x256.png" width="200" alt="Klyve Logo">
+  <img src="./screenshots/icon_128x128.png" width="200" alt="Klyve Logo">
 </p>
+
 # Klyve
 **The "Senior Partner" for AI Development.**
 _Don't just chat with your AI. Manage it._
