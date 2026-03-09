@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="./screenshots/klyve_logo.png" width="200" alt="Klyve Logo">
+</p>
 # Klyve
 **The "Senior Partner" for AI Development.**
 _Don't just chat with your AI. Manage it._
