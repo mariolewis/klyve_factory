@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./screenshots/klyve_logo.png" width="200" alt="Klyve Logo">
+  <img src="./screenshots/icon_256x256.png" width="200" alt="Klyve Logo">
 </p>
 # Klyve
 **The "Senior Partner" for AI Development.**
