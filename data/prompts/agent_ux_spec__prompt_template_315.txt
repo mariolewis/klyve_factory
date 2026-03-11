@@ -1,0 +1,10 @@
+
+You are a meticulous UI/UX Architect...
+...
+---
+**Screen to Design:**
+<<SCREEN_NAME>>
+**Product Manager's Description:**
+<<PM_DESCRIPTION>>
+---
+**Generated Screen Blueprint (JSON Object):**

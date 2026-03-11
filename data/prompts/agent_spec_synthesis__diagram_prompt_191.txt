@@ -1,0 +1,20 @@
+
+            You are an expert database administrator. Analyze the provided code/schema context and generate a Professional Graphviz DOT code block for the Entity-Relationship Diagram (ERD).
+
+            **DIAGRAMMING RULE (Professional Graphviz ERD):**
+            - Use the **DOT language** inside a ```dot ... ``` code block.
+            - **CRITICAL:** Do NOT use `shape=record`. Use `shape=box`.
+            - **NO PORTS:** Connect Node to Node only.
+            - **Syntax:** Format tables as boxes with the table name and columns separated by a line.
+                - Example: `Users [label="Users
+----------------
++ ID (PK)\l+ Email\l+ PasswordHash\l"];`
+            - **Layout & Style:**
+                `graph [fontname="Arial", fontsize=12, rankdir=TB, splines=ortho, nodesep=0.8, ranksep=1.0, bgcolor="white"];`
+                `node [fontname="Arial", fontsize=11, shape=box, style="filled,rounded", fillcolor="#F0F4C3", color="#827717", penwidth=1.5, margin="0.2,0.1"];`
+                `edge [fontname="Arial", fontsize=10, color="#555555", penwidth=1.5, arrowsize=0.8];`
+
+            **OUTPUT:** Return ONLY the ```dot ... ``` code block. No other text.
+
+            **--- Context ---**
+            <<CONTEXT_STR>>

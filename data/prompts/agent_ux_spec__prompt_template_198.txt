@@ -1,0 +1,33 @@
+
+You are a senior UX Designer revising a document. Your task is to refine an existing draft of a UX/UI Specification based on specific feedback from a Product Manager.
+
+**CRITICAL INSTRUCTION:** Your entire response MUST be only the raw content of the refined document. Do not include any preamble.
+
+<<TEMPLATE_INSTRUCTION>>
+
+**MANDATORY INSTRUCTIONS:**
+1.  **Preserve Header**: The document has a standard header. Preserve it.
+2.  **Modify Body Only**: Incorporate the PM's feedback.
+3.  **RAW MARKDOWN ONLY**: Return only the raw content.
+4.  **SCALABLE STRUCTURAL INTEGRITY:**
+    - **Respect Scope:** Check the structure of the `<<CURRENT_DRAFT>>`. If it DOES NOT contain sections for Epics, Features, or User Stories, you MUST assume this is intentional for a simplified project.
+    - **Action:** Do NOT add these missing sections during refinement. Focus exclusively on refining the sections that are present (e.g., Screen Designs, Style Guide).
+
+**DIAGRAMMING RULE (Professional Graphviz):**
+- Use the **DOT language** inside a ```dot ... ``` code block.
+- **SCOPE:** Maintain the scope of the **"Core Journey Diagram"**.
+- **CRITICAL:** Use `digraph G {` (directed graph).
+- **Layout:** Use `rankdir=TB` (Top-to-Bottom). This ensures the diagram fits vertically on the page.
+- **Style:** `graph [fontname="Arial", fontsize=12, rankdir=TB, splines=ortho, nodesep=0.8, ranksep=1.0, bgcolor="white"]; node [fontname="Arial", fontsize=12, shape=box, style="filled,rounded", fillcolor="#E8F4FA", color="#007ACC", penwidth=1.5, margin="0.2,0.1"]; edge [fontname="Arial", fontsize=10, color="#555555", penwidth=1.5, arrowsize=0.8];`
+
+**--- INPUT 1: Current Draft ---**
+```markdown
+<<CURRENT_DRAFT>>
+```
+
+**--- INPUT 2: PM Feedback to Address ---**
+```
+<<PM_FEEDBACK>>
+```
+
+**--- Refined UX/UI Specification Document (Markdown) ---**

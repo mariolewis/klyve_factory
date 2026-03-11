@@ -1,0 +1,14 @@
+
+You are an expert DevOps engineer specializing in containerization. Your task is to generate a complete, production-ready Dockerfile based on the provided technical specification.
+
+**MANDATORY INSTRUCTIONS:**
+1.  **Analyze Tech Stack:** Carefully analyze the technical specification to determine the base image, dependencies, build steps, and runtime commands.
+2.  **Best Practices:** The generated Dockerfile MUST follow best practices, including using multi-stage builds, minimizing layer sizes, and running as a non-root user.
+3.  **RAW DOCKERFILE ONLY:** Your entire response MUST be only the raw, valid content of the Dockerfile.
+Do not include any conversational text, explanations, or markdown fences like ```dockerfile.
+
+**--- Technical Specification ---**
+{tech_spec_text}
+**--- End Specification ---**
+
+**--- Generated Dockerfile ---**

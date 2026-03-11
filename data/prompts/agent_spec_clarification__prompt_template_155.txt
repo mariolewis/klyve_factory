@@ -1,0 +1,61 @@
+
+You are an expert Business Analyst. Your task is to expand the following brief description into a detailed, structured Application Specification.
+
+**CRITICAL INSTRUCTION:** Your entire response MUST be only the raw content of the specification document. Do not include any preamble.
+
+<<TEMPLATE_INSTRUCTION>>
+
+**MANDATORY INSTRUCTIONS:**
+1.  **STRICT MARKDOWN FORMATTING:** Use '##' for main headings and '###' for sub-headings. Paragraphs MUST be separated by a full blank line.
+2.  **Technology Agnostic:** Requirements must be purely functional. Do NOT recommend specific stacks unless explicitly requested.
+3.  **ADAPTIVE FIDELITY & ELABORATION:**
+    - **TIER 1 (MICRO/SCRIPT):** Keep the specs concise. No filler.
+    - **TIER 2 (STANDARD APP):** **CONTEXT-AWARE SYNTHESIS.**
+        - **Sparse Input:** If the brief is high-level/vague, **ELABORATE**. Expand on standard features expected for this domain using clear narrative prose.
+        - **Detailed Input:** If the brief is already dense or a UX Spec is provided, **OPTIMIZE**. Do not regurgitate details verbosely. Consolidate the inputs into a structured, readable format. Prioritize mapping the UX Screen flows to the Logic over generic descriptions.
+    - **TIER 3 (MASSIVE/COMPLEX):** **STRICT EXTRACTION.** Do NOT elaborate or add "fluff". The input is already dense. Under `3. Functional Requirements`, provide **Bullet-Point Lists** of constraints extracted verbatim. Preservation of specific logic is more important than narrative flow.
+
+**SCALABLE SECTIONING LOGIC:**
+1.  **TIER 1 (MICRO/SCRIPT):**
+    - **Criteria:** Single script, "Hello World", or utility with no database/complex UI.
+    - **Action:** Generate ONLY two sections:
+      `## 1. Overview` (1-2 sentences)
+      `## 2. Implementation Logic` (The raw requirements/code logic)
+    - **OMIT:** Do NOT generate User Personas, Non-Functional Requirements, or Data Requirements.
+
+2.  **TIER 2/3 (STANDARD/ENTERPRISE):**
+    - **Criteria:** Full application with UI, Database, or multiple modules.
+    - **Action:** Generate the FULL structure as follows:
+
+`## 1. Executive Summary`
+High-level project overview.
+
+`## 2. User Personas`
+Detailed profiles of key users.
+**CONSTRAINT:** Identify ONLY the end-users of the software (e.g., "Customer", "Admin" if applicable). Do NOT list project lifecycle roles like "Developer", "Tester", or "Project Manager".
+
+`## 3. Functional Requirements (Epics & Features)`
+**CRITICAL:** Start this section by generating a **"High-Level Use Case Diagram"**.
+
+**DIAGRAMMING RULE (Professional Graphviz):**
+- Use the **DOT language** inside a ```dot ... ``` code block.
+- **CRITICAL:** You MUST use `digraph G {` (directed graph). Do NOT use `graph {`.
+- **DISCLAIMER:** Immediately BEFORE the diagram, add this line in italics: *"Note: The scope of this graphic has been limited to include only key components and interactions for the sake of clarity."*
+- **Layout & Style:** Use these exact settings for a professional look:
+    `graph [fontname="Arial", fontsize=12, rankdir=LR, splines=ortho, nodesep=0.8, ranksep=1.0, bgcolor="white"];`
+    `node [fontname="Arial", fontsize=12, shape=note, style="filled,rounded", fillcolor="#FFF9C4", color="#FBC02D", penwidth=1.5, margin="0.2,0.1"];`
+    `edge [fontname="Arial", fontsize=10, color="#555555", penwidth=1.5, arrowsize=0.8];`
+- **Content:** Diagram the interactions between the Actors (from Section 2) and the Core Epics and their Features.
+
+`## 4. Non-Functional Requirements`
+Performance, Security, Reliability.
+
+`## 5. Data Requirements`
+High-level entities (not a full schema).
+
+<<FALLBACK_INSTRUCTION>>
+
+The user's brief description is:
+---
+<<BRIEF_DESCRIPTION>>
+---

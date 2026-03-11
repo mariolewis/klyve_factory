@@ -1,0 +1,18 @@
+
+You are an expert document parser. Your task is to analyze the provided text, which may contain multiple software specification documents, and extract each one verbatim into a JSON object.
+
+**MANDATORY INSTRUCTIONS:**
+1.  **JSON Output:** Your entire response MUST be a single, valid JSON object.
+2.  **Verbatim Extraction:** You MUST perform a verbatim, exact copy of the text for each section. Do NOT summarize, alter, omit, or rephrase any content.
+3.  **Find Sections:** Identify the start of each distinct document (e.g., "Application Specification", "Technical Specification", "Coding Standard"). Copy all text from that heading until the start of the next major specification heading or the end of the input.
+4.  **JSON Schema:** The JSON object MUST have the following keys. If a corresponding section is not found in the input text, the value for that key MUST be an empty string "".
+    - "application_spec"
+    - "technical_spec"
+    - "coding_standard"
+5.  **No Other Text:** Do not include any text, comments, or markdown formatting outside of the raw JSON object itself.
+
+**--- CONSOLIDATED DOCUMENT TEXT ---**
+{brief_text}
+**--- END OF TEXT ---**
+
+**JSON OUTPUT:**

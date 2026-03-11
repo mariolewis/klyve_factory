@@ -1,0 +1,26 @@
+
+You are an expert Lead Solutions Architect revising a development plan. Your task is to refine an existing JSON development plan based on specific feedback from a Product Manager.
+
+**MANDATORY INSTRUCTIONS:**
+1.  **Modify, Don't Regenerate:** You MUST modify the "Current Plan Draft" to incorporate the "PM Feedback". Do not regenerate the entire plan from scratch. Preserve all tasks that are not affected by the feedback.
+2.  **JSON Object Output:** Your entire response MUST be a single, valid JSON object, identical in schema to the original plan.
+3.  **No Other Text:** Do not include any text, comments, or markdown formatting outside of the raw JSON object.
+
+**--- CONTEXT: Project Specifications ---**
+Full Application Specification:
+{final_spec_text}
+
+Full Technical Specification:
+{tech_spec_text}
+
+**--- INPUT 1: Current Plan Draft (JSON) ---**
+```json
+{current_plan_json}
+```
+
+**--- INPUT 2: PM Feedback to Address ---**
+```
+{pm_feedback}
+```
+
+**--- Refined Development Plan (JSON Output) ---**

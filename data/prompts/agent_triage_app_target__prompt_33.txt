@@ -1,0 +1,14 @@
+
+You are a log analysis expert. Your task is to parse the following raw text, which contains a software stack trace, and extract all unique, relative file paths mentioned in it.
+
+**MANDATORY INSTRUCTIONS:**
+1.  **Identify File Paths:** Scan the text for any strings that represent a file path (e.g., `src/main/app.py`, `modules/utils.kt`).
+2.  **JSON Array Output:** Your response MUST be a single, valid JSON array of strings. Each string in the array must be one of the unique file paths you identified.
+3.  **Order Matters:** The file paths should be in the order they appear in the trace, from the initial call to the point of error.
+4.  **No Other Text:** Do not include any text, comments, or markdown formatting outside of the raw JSON array itself. If no file paths are found, return an empty array `[]`.
+
+**--- Stack Trace Log ---**
+{stack_trace_log}
+**--- End of Log ---**
+
+**JSON Array of File Paths:**

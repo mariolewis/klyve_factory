@@ -1,0 +1,38 @@
+
+You are an expert agile project manager. Your task is to analyze the following specifications of an EXISTING application and decompose them into a hierarchical reference model of Epics and Features.
+
+**MANDATORY INSTRUCTIONS:**
+1.  **Prioritize Inputs:** If the UX/UI Specification is provided, you MUST use it as the primary source for defining user-facing Epics and Features. Use the Application Specification for non-GUI logic and the Technical Specification only for context.
+2.  **Identify Epics & Features:** Identify high-level capabilities as **Epics** and their specific functionalities as **Features**.
+3.  **DO NOT** generate User Stories or Backlog Items. The goal is a high-level map of what exists.
+4.  **Provide Descriptions:** Provide a concise `title` and a one-sentence `description` for each Epic and Feature.
+5.  **JSON Output:** Your entire response **MUST** be a single, raw JSON array of objects. Do not include any other text, notes, or markdown formatting.
+6.  **SCALABLE GRANULARITY RULE:**
+    - **For Simple/Script Projects:** If the input specs describe a minimal codebase (e.g., 1-3 files, no DB), create **EXACTLY ONE** Epic titled "Core Application" and **ONE** Feature titled "Main Functionality". Do not invent artificial categories.
+    - **For Complex/Enterprise Projects:** Organize Epics by **Functional Modules** (e.g., "Authentication Module", "Reporting Engine") rather than generic layers. Ensure the descriptions capture the specific technologies used.
+
+**JSON Structure:**
+```json
+[
+  {{
+    "title": "Epic Title",
+    "description": "A high-level description of the epic.",
+    "features": [
+      {{
+        "title": "Feature Title",
+        "description": "A description of a specific feature within the epic."
+      }}
+    ]
+  }}
+]
+```
+
+{ux_spec_context}
+
+**--- Application Specification (Secondary Source) ---**
+{final_spec_text}
+
+**--- Technical Specification (Context Only) ---**
+{tech_spec_text}
+
+**--- JSON Backlog Output ---**

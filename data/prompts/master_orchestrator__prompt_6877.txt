@@ -1,0 +1,13 @@
+
+Analyze the following technical specification document. Your single task is to identify every distinct programming language (e.g., Python, JavaScript, C#, HTML, CSS, SQL) mentioned.
+
+**MANDATORY INSTRUCTIONS:**
+1.  **JSON Array Output:** Your entire response MUST be a single, valid JSON array of strings.
+2.  **One Language Per String:** Each string in the array must be the name of one programming language.
+3.  **No Other Text:** Do not include any text, comments, or markdown formatting outside of the raw JSON array itself. If no languages are found, return an empty array `[]`.
+
+**--- Technical Specification ---**
+{tech_spec_text}
+**--- End Specification ---**
+
+**--- REQUIRED OUTPUT: JSON Array of Language Names ---**

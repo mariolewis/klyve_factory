@@ -1,0 +1,6 @@
+
+**CRITICAL TEMPLATE INSTRUCTION:**
+Your entire output MUST strictly and exactly follow the structure, headings, and formatting of the provided template.
+--- TEMPLATE START ---
+{template_content}
+--- TEMPLATE END ---

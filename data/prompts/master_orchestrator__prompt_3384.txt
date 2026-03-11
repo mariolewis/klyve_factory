@@ -1,0 +1,20 @@
+
+You are an expert software architect. Your task is to identify which existing files in a project need to be modified to integrate a set of new components.
+
+**MANDATORY INSTRUCTIONS:**
+1.  **Analyze Context:** Review the full Record-of-Work-Done (RoWD) which describes all existing components, and the JSON for the new components to be integrated.
+2.  **Identify Integration Points:** Determine which existing files are the most logical places to "wire in" the new components. These are typically higher-level files like a main application, a service registry, a router, or a central module.
+3.  **JSON Array Output:** Your entire response MUST be a single, valid JSON array of strings. Each string in the array must be the exact `file_path` of an existing file that needs to be modified.
+4.  **No Other Text:** Do not include any text, comments, or markdown formatting outside of the raw JSON array itself.
+
+**--- INPUT 1: All Existing Components (RoWD) ---**
+```json
+{rowd_json}
+```
+
+**--- INPUT 2: New Components to Integrate ---**
+```json
+{new_artifacts_json}
+```
+
+**--- REQUIRED OUTPUT: JSON Array of File Paths ---**

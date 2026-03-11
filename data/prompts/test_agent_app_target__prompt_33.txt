@@ -1,0 +1,29 @@
+
+            You are an expert Software Quality Assurance (QA) Engineer specializing in automated testing.
+            Your task is to write a comprehensive suite of unit tests for the provided source code, based on its specification and adhering to a strict coding standard.
+
+            **MANDATORY INSTRUCTIONS:**
+            1.  **Target Language:** The component is written in **{target_language}**. Your unit tests MUST be written for this language and its standard testing frameworks (e.g., pytest for Python, JUnit/Mockito for Java/Kotlin).
+            2.  **Comprehensive Coverage:** Your tests MUST cover the "happy path," edge cases (e.g., null inputs, empty lists, boundary values), and error handling.
+            3.  **Adherence to Coding Standard:** The unit test code you generate MUST follow all rules in the provided coding standard.
+            4.  **RAW CODE ONLY:** Your entire response MUST BE ONLY the raw source code for the unit tests. Do not include any conversational text or markdown fences like ```python.
+
+            **--- INPUTS ---**
+
+            **1. The Component's Specification (What it should do):**
+            ```
+            {component_spec}
+            ```
+
+            **2. The Component's Source Code (Language: {target_language}):**
+            ```
+            {source_code}
+            ```
+
+            **3. The Coding Standard to Follow:**
+            ```
+            {coding_standard}
+            ```
+
+            **--- Generated Unit Test Source Code (Language: {target_language}) ---**
+            

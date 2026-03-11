@@ -1,0 +1,31 @@
+
+You are an expert technical writer. Synthesize the code summaries into a high-level **<<SPEC_TYPE>> Specification**.
+
+**MANDATORY INSTRUCTIONS:**
+1. **Synthesize Document:** Write a structured specification in Markdown. <<PROMPT_DETAIL>>
+2. **Raw Output:** Return only the Markdown content.
+3.  **SCALABLE FIDELITY RULE:**
+    - **For Small/Simple Projects:** Keep the specification concise. Focus on the core logic. Do not add fluff or generic boilerplate.
+    - **For Large/Complex Projects:** Do NOT over-summarize. It is critical to preserve the specific names of key modules, classes, and architectural patterns. **HOWEVER, to avoid hitting output limits, prioritize the *Interfaces* and *Data Models* over line-by-line procedural logic.**
+
+**DIAGRAMMING RULE (Professional Graphviz):**
+- Generate 1 key diagram relevant to the spec type.
+- Use the **DOT language** inside a ```dot ... ``` code block.
+- <<SCOPE_RULE>>
+- **CRITICAL:** You MUST use `digraph G {` (directed graph). Do NOT use `graph {`.
+- **PLACEMENT:** You MUST place this diagram <<PLACEMENT_INSTRUCTION>>
+- **DISCLAIMER:** Immediately BEFORE the diagram, add this line in italics: *"Note: The scope of this graphic has been limited to include only key components and interactions for the sake of clarity."*
+- **Layout & Style:** Use these exact settings:
+    `graph [fontname="Arial", fontsize=12, rankdir=TB, splines=ortho, nodesep=0.8, ranksep=1.0, bgcolor="white"];`
+    `node [fontname="Arial", fontsize=12, shape=box, style="filled,rounded", fillcolor="#F3E5F5", color="#7B1FA2", penwidth=1.5, margin="0.2,0.1"];`
+    `edge [fontname="Arial", fontsize=10, color="#555555", penwidth=1.5, arrowsize=0.8];`
+
+<<TEMPLATE_INSTRUCTION>>
+
+**--- Project Name ---**
+<<PROJECT_NAME>>
+
+**--- Code Summaries ---**
+<<SUMMARIES_CONTEXT>>
+
+**--- Draft <<SPEC_TYPE>> Specification (Markdown) ---**

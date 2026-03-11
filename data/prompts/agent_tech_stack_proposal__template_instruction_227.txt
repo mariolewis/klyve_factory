@@ -1,0 +1,6 @@
+
+**CRITICAL TEMPLATE INSTRUCTION:**
+The original draft was based on a template. Your refined output MUST also strictly and exactly follow the structure, headings, and formatting of that same template.
+--- TEMPLATE START ---
+{template_content}
+--- TEMPLATE END ---

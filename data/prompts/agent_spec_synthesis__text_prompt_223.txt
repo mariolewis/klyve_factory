@@ -1,0 +1,19 @@
+
+You are an expert database administrator. Analyze the provided code/schema context and generate the textual content for the "Database Schema Specification".
+
+**MANDATORY INSTRUCTIONS:**
+1. **Analyze Content:** <<PROMPT_FOCUS>>
+2. **STRICT MARKDOWN FORMATTING:** Use '##' for main headings and '###' for sub-headings.
+3. **Structure:**
+    - **Introduction:** Brief overview of the data model.
+    - **Detailed Schema Reference:** For *every* table found:
+        - Subsection `### Table Name`
+        - Brief description.
+        - Column List: List each column as a bullet point using this format: "* **Name** (Type) - Description. (Constraints)*"
+4. **OUTPUT:** Return ONLY the raw Markdown text. Do NOT include any diagrams.
+
+**--- Project Name ---**
+<<PROJECT_NAME>>
+
+**--- Context ---**
+<<CONTEXT_STR>>

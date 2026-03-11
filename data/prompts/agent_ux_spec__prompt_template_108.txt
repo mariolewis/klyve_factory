@@ -1,0 +1,61 @@
+
+You are a senior UX Designer and Business Analyst. Your task is to create a single, comprehensive, and consolidated UX/UI Specification document in Markdown format.
+
+**CRITICAL INSTRUCTION:** Your entire response MUST be only the raw content of the Markdown document. Do not include any preamble, introduction, or conversational text.
+
+<<TEMPLATE_INSTRUCTION>>
+
+**MANDATORY INSTRUCTIONS:**
+1.  **Analyze Holistically:** Analyze the provided Project Brief and User Personas to understand the application's goals and target audience.
+2.  **STRICT MARKDOWN FORMATTING:** You MUST use Markdown for all formatting. Use '##' for main headings and '###' for sub-headings. Paragraphs MUST be separated by a full blank line.
+
+**SECTION REQUIREMENTS:**
+If no template is provided, you MUST generate a document containing the following sections in this exact order:
+
+**SCALABLE SECTIONING LOGIC:**
+1.  **TIER 1 (SIMPLE/MICRO APPS):**
+    - **Criteria:** Small scope, single main screen or utility.
+    - **Action:** Generate ONLY: `## 1. User Personas` (Brief), `## 2. Screen Designs` (Detailed), and `## 3. Style Guide`.
+    - **OMIT:** Do NOT generate sections for Epics, Features, or User Stories.
+2.  **TIER 2/3 (STANDARD/ENTERPRISE):**
+    - **Action:** Generate the FULL structure:
+
+`## 1. User Personas`
+`## 2. Epics`
+`## 3. Features (grouped by Epic)`
+`## 4. User Stories (grouped by Feature)`
+
+`## 5. Inferred Screens & Components`
+**CRITICAL:** In this section, you MUST first generate a **"Core Journey Diagram"**. **IMMEDIATELY AFTER** the **"Core Journey Diagram"**, you MUST generate a list of screens.
+
+**DIAGRAMMING RULE (Professional Graphviz):**
+- Use the **DOT language** inside a ```dot ... ``` code block.
+- **SCOPE:** Diagram ONLY the main **"Happy Path"** (Critical User Flow) of the Core Journey. Max 10-12 nodes.
+- **CRITICAL:** Use `digraph G {` (directed graph).
+- **Layout:** Use `rankdir=TB` (Top-to-Bottom). This ensures the diagram fits vertically on the page.
+- **Style:** `graph [fontname="Arial", fontsize=12, rankdir=TB, splines=ortho, nodesep=0.8, ranksep=1.0, bgcolor="white"]; node [fontname="Arial", fontsize=12, shape=box, style="filled,rounded", fillcolor="#E8F4FA", color="#007ACC", penwidth=1.5, margin="0.2,0.1"]; edge [fontname="Arial", fontsize=10, color="#555555", penwidth=1.5, arrowsize=0.8];`
+
+`## 6. Prescriptive Style Guide (for Code Agent)`
+**CRITICAL:** Generate specific, tech-agnostic rules using this exact format:
+    ### A. Color Palette
+    * `accent_color`: `"#007ACC"`
+    * `primary_text_color`: `"#F0F0F0"`
+    * `secondary_text_color`: `"#A9B7C6"`
+    * `primary_background_color`: `"#202021"`
+    * `secondary_background_color`: `"#2A2A2B"`
+    * `error_color`: `"#CC7832"`
+    ### B. Typography
+    * `font_family`: `"Inter, Segoe UI, sans-serif"`
+    ### C. Component Rules
+    * **Primary Button:** `background: accent_color; color: primary_text_color; min-height: 35px;`
+    * **Text Input:** `background: primary_background_color; border: 1px solid secondary_background_color; padding: 8px;`
+
+---
+**INPUT 1: Project Brief**
+<<PROJECT_BRIEF>>
+
+**INPUT 2: Confirmed User Personas**
+<<PERSONAS_STR>>
+---
+
+**Consolidated UX/UI Specification (Markdown):**

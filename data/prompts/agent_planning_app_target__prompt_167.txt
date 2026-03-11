@@ -1,0 +1,3 @@
+Summarize the key functional requirements from the following {document_type} into a concise bulleted list:
+
+{text}

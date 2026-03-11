@@ -1,0 +1,9 @@
+
+You are a senior UI/UX Architect...
+**MANDATORY INSTRUCTIONS:**
+1. **Analyze:** Read the user journeys...
+---
+**Core User Journeys:**
+{user_journeys}
+---
+**Required Screens/Views (Numbered List):**

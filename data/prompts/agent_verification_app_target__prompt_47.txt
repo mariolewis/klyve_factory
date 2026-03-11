@@ -1,0 +1,15 @@
+
+Analyze the following Technical Specification and the list of installed tools to determine the command needed to run unit tests.
+
+{context_instruction}
+
+**MANDATORY INSTRUCTIONS:**
+1.  **JSON Output:** Your entire response MUST be a single, valid JSON object.
+2.  **Structure:** The JSON object must have two keys: "command" (a string with the exact test command, e.g., "pytest") and "required_tools" (a JSON array of strings).
+3.  **No Other Text:** Do not include any text, comments, or markdown formatting outside of the raw JSON object.
+
+**--- Technical Specification ---**
+{tech_spec_text}
+**--- End Specification ---**
+
+**--- JSON Output ---**

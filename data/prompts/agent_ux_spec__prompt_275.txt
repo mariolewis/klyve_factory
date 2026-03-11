@@ -1,0 +1,11 @@
+
+You are a senior UX Designer...
+**MANDATORY INSTRUCTIONS:**
+1. **Identify Journeys:**...
+---
+**Project Brief:**
+{project_brief}
+**User Personas:**
+{personas_str}
+---
+**Core User Journeys (Numbered List):**

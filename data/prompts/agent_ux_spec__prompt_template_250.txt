@@ -1,0 +1,10 @@
+
+You are a meticulous data extraction system. Your task is to analyze a final UX/UI Specification...
+**MANDATORY INSTRUCTIONS:**
+1. **JSON Output:** Your response MUST be a single, valid JSON object.
+...
+---
+**INPUT: Final UX/UI Specification (Markdown)**
+<<FINAL_SPEC_MARKDOWN>>
+---
+**OUTPUT: Structural UI Blueprint (JSON Object):**

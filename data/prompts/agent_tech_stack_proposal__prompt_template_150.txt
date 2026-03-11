@@ -1,0 +1,61 @@
+
+You are an expert Solutions Architect. Your task is to create the BODY of a formal Technical Specification for a **<<TARGET_OS>>** environment.
+
+**CRITICAL INSTRUCTIONS:** - Your entire response MUST be only the raw Markdown content.
+- Do NOT add a header or preamble.
+
+<<TEMPLATE_INSTRUCTION>>
+
+**SCALING LOGIC & STRUCTURAL RULES:**
+1.  **TIER 1 (MICRO/SCRIPT):**
+    - **Criteria:** Single script, CLI utility, or simple tool with no database.
+    - **Action:** Generate a **SIMPLIFIED SPEC**.
+        - OMIT Sections 1, 2, and 4.
+        - OMIT ALL Diagrams.
+        - ONLY Generate: `## 1. Technology Stack Selection`, `## 2. Non-Functional Requirements`, and `## 3. Development Environment Setup Guide`.
+2.  **TIER 2/3 (STANDARD/ENTERPRISE):**
+    - **Criteria:** Full application with UI, Database, or multiple modules.
+    - **Action:** Generate the **FULL SPEC** as defined below, applying **CONTEXT-AWARE FIDELITY**:
+        - **TIER 2 (STANDARD):** **EXPLANATORY.** Provide clear reasoning for architectural choices. In `## 2. Component Architecture`, describe the responsibilities of key modules in narrative prose.
+        - **TIER 3 (ENTERPRISE):** **STRUCTURAL INDEXING.** Do NOT write verbose descriptions. In `## 2. Component Architecture`, provide a **Hierarchical List** of namespaces/packages/services. Prioritize the *structure* and *relationships* over implementation details to save tokens.
+
+**FULL SPECIFICATION STRUCTURE (For Tier 2/3 Projects Only):**
+If the project is TIER 2 or 3, you MUST generate the document using the following sections and diagrams.
+
+`## 1. High-Level Architecture`
+- Describe the overall system design (e.g., MVC, Microservices).
+- **DIAGRAM 1 (Architecture):** Immediately after the description, generate a **"System Context Diagram"**.
+    - **Scope:** Show ONLY the 5-7 highest-level components (e.g., Frontend, Backend API, Database, External Service).
+    - **Syntax:** Use `digraph G {` inside a ```dot ... ``` block.
+    - **DISCLAIMER:** Immediately BEFORE the diagram, add this line in italics: *"Note: The scope of this graphic has been limited to include only key components and interactions for the sake of clarity."*
+    - **CRITICAL LAYOUT RULE:** You MUST use `rankdir=TB` (Top-to-Bottom) to ensure the diagram fits vertically.
+    - **Style:** Use these settings: `graph [fontname="Arial", fontsize=12, rankdir=TB, splines=ortho, nodesep=0.8, ranksep=1.0, bgcolor="white", compound=true]; node [fontname="Arial", shape=component, style="filled,rounded", fillcolor="#E1F5FE", color="#0277BD", penwidth=1.5, margin="0.2,0.1"];`
+
+`## 2. Component Architecture Design`
+- Detailed breakdown of internal modules.
+
+`## 3. Technology Stack Selection`
+- Languages, Frameworks, Libraries.
+
+`## 4. Data & Integration Architecture`
+- Database choice, Schema design strategy.
+- **DIAGRAM 2 (Data Flow):** Immediately after the description, generate a **"High-Level Data Flow Diagram"**.
+    - **Scope:** Show how data moves between the User, the App, and the Database. Max 5-8 nodes.
+    - **Syntax:** Use `digraph G {` inside a ```dot ... ``` block.
+    - **DISCLAIMER:** Immediately BEFORE the diagram, add this line in italics: *"Note: The scope of this graphic has been limited to include only key components and interactions for the sake of clarity."*
+    - **CRITICAL LAYOUT RULE:** You MUST use `rankdir=TB` (Top-to-Bottom).
+    - **Style:** Use these settings: `graph [fontname="Arial", rankdir=TB, splines=ortho, bgcolor="white"]; node [fontname="Arial", shape=cylinder, style="filled", fillcolor="#FFF3E0", color="#EF6C00"];`
+
+`## 5. Non-Functional Requirements (NFRs)`
+- Scalability, Security, Performance.
+
+`## 6. Development Environment Setup Guide`
+- Prerequisites and installation steps.
+
+<<PM_GUIDELINES_SECTION>>
+
+**--- Functional Specification ---**
+<<FUNCTIONAL_SPEC_TEXT>>
+---
+
+**--- Generated Technical Specification Body (Raw Markdown) ---**

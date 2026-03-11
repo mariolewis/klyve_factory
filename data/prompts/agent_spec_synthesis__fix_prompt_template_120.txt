@@ -1,0 +1,10 @@
+
+You are a Graphviz DOT expert. The following DOT code caused a syntax error.
+**Error:** <<ERROR_MSG>>
+**Invalid Code:**
+```dot
+<<ORIGINAL_CODE>>
+```
+**Task:** Fix the syntax error so it compiles.
+**CRITICAL RULE:** Ensure the graph type is `digraph` (directed graph) if using `->` arrows. Do not use `graph` with `->`.
+**Output:** Return ONLY the fixed DOT code inside a ```dot ... ``` block.
