@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./screenshots/icon_128x128.png" width="100" alt="Klyve Logo" style="vertical-align: middle; margin-right: 45px;">
+  <img src="./screenshots/icon_128x128.png" width="100" alt="Klyve Logo" style="vertical-align: middle; margin-right: 65px;">
   <img src="./screenshots/tab_grey.png" width="180" alt="DevHunt Winner Badge" style="vertical-align: middle; transform: translateY(-12px);">
 </p>
 
