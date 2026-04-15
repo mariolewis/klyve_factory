@@ -1,4 +1,4 @@
-<table align="center" border="0" cellpadding="0" cellspacing="0">
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="border: none; border-collapse: collapse;">
   <tr>
     <td style="padding-right: 60px;">
       <img src="./screenshots/icon_128x128.png" width="100" alt="Klyve Logo">
