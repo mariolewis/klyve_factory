@@ -4,7 +4,6 @@
       <img src="./screenshots/icon_128x128.png" width="100" alt="Klyve Logo">
     </td>
     <td>
-      <br>
       <img src="./screenshots/tab_grey.png" width="180" alt="DevHunt Winner Badge">
     </td>
   </tr>
