@@ -1,7 +1,14 @@
-<p align="center">
-  <img src="./screenshots/icon_128x128.png" width="100" alt="Klyve Logo" style="vertical-align: middle; margin-right: 65px;">
-  <img src="./screenshots/tab_grey.png" width="180" alt="DevHunt Winner Badge" style="vertical-align: middle; transform: translateY(-25px);">
-</p>
+<table align="center" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td style="padding-right: 60px;">
+      <img src="./screenshots/icon_128x128.png" width="100" alt="Klyve Logo">
+    </td>
+    <td>
+      <br>
+      <img src="./screenshots/tab_grey.png" width="180" alt="DevHunt Winner Badge">
+    </td>
+  </tr>
+</table>
 
 # Klyve
 **The "Senior Partner" for AI Development.**
