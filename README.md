@@ -1,6 +1,4 @@
-<head>
 <meta name="google-site-verification" content="N98_sLzFZ2iYcmG407F0s2imY5bYGoOl8Vhs6kcxusw" />
-</head>
 <table align="center" border="0" cellpadding="0" cellspacing="0" style="border: none; border-collapse: collapse;">
   <tr>
     <td style="padding-right: 60px;">
